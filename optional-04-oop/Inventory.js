@@ -17,13 +17,12 @@ class Inventory {
     }
     addItem(item){
         // console.log("pushing: " + item.displayDetails())
-        this.items.push(item)
+        this.items.push(item);
     }
     removeItem(id){
         let index = this.#findItemIndex(id)
         if (index < 0) {
-            console.log("ID not found!")
-            return
+            throw new Error("ID doesn't exist!")
         }
         // console.log(index)
 

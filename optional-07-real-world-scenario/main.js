@@ -11,7 +11,6 @@ addOrder('Bob', [
 ]);
 
 console.log(orders);
-
 /**
  * Output yang diharapkan:
  * [
